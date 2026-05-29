@@ -173,7 +173,7 @@ export default function BulkProfileForm() {
               : "Run all"}
           </button>
           <span className="text-xs text-neutral-500">
-            3 parallel workers · ~$0.55 LlamaParse + ~$0.02 Groq per company
+            3 parallel workers · resubmits hit the URL cache and skip LlamaParse
           </span>
         </div>
       </div>

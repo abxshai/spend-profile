@@ -7,7 +7,7 @@ export default function Home() {
         <h1 className="text-3xl font-semibold tracking-tight">Spend Profile Agent</h1>
         <p className="mt-2 text-sm text-neutral-400">
           Paste an annual-report URL or upload a PDF. Get a procurement spend profile with verified
-          citations, then chat with the report to drill into specifics — all in about 2 minutes.
+          citations in about 2 minutes.
         </p>
       </header>
       <SpendProfileForm />

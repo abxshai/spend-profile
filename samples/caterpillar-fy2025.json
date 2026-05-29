@@ -1,0 +1,75 @@
+{
+  "company": {
+    "name": "Caterpillar Inc.",
+    "ticker": "CAT",
+    "country": "US"
+  },
+  "fiscal_year": 2025,
+  "total_addressable_spend": {
+    "value_usd": 56438000000,
+    "basis": "total_opex_ex_da_sbc",
+    "citation": {
+      "page": null,
+      "quote": "Total operating costs 56,438 51,737 54,094 53,096 48,265 51,210 3,518 3,607 3,004 (176) (135) (120)",
+      "source": "ocr"
+    }
+  },
+  "top_3_spend_categories": [
+    {
+      "category": "Cost of goods sold",
+      "value_usd": 44752000000,
+      "citation": {
+        "page": null,
+        "quote": "Operating costs: Cost of goods sold 44,752 40,199 42,767 44,761 40,206 42,776 $ - $ - $ - (9) 2 (7) 2 (9) 2",
+        "source": "ocr"
+      }
+    },
+    {
+      "category": "Selling, general and administrative",
+      "value_usd": 6985000000,
+      "citation": {
+        "page": null,
+        "quote": "Selling, general and administrative expenses 6,985 6,667 6,371 6,183 5,881 5,696 842 786 704 (40) 2 $ - (29) 2",
+        "source": "ocr"
+      }
+    },
+    {
+      "category": "Depreciation and amortization",
+      "value_usd": 2262000000,
+      "citation": {
+        "page": null,
+        "quote": "Depreciation and amortization 2,262 2,153 1,497 1,368 765 785",
+        "source": "ocr"
+      }
+    }
+  ],
+  "yoy_cogs_change": {
+    "delta": 0.1133,
+    "current_year_value_usd": 44752000000,
+    "prior_year_value_usd": 40199000000,
+    "citation": {
+      "page": null,
+      "quote": "Operating costs: Cost of goods sold 44,752 40,199 42,767 44,761 40,206 42,776 $ - $ - $ - (9) 2 (7) 2 (9) 2",
+      "source": "ocr"
+    }
+  },
+  "procurement_risks": [
+    {
+      "risk": "Commodity price volatility \u2013 higher steel and other commodity prices could increase costs if not offset by price increases or cost\u2011reduction measures.",
+      "discovery_question": "How are you currently managing exposure to rising steel and commodity prices in your procurement budget?",
+      "citation": {
+        "page": null,
+        "quote": "We are a significant user of steel and many other commodities required for the manufacture of our products. Increases in the prices of such commodities would increase our costs, negatively impacting our business, results of operations and financial condition if we are unable to fully offset the effect of these increased costs through price increases, productivity improvements, cost reduction programs or hedging programs.",
+        "source": "ocr"
+      }
+    },
+    {
+      "risk": "Supplier disruption risk \u2013 production challenges or delivery disruptions at key suppliers (including semiconductors) could affect material availability and increase operating costs.",
+      "discovery_question": "What contingency plans do you have for supplier delivery delays or disruptions, especially for critical components?",
+      "citation": null
+    }
+  ],
+  "major_suppliers": [],
+  "sales_angle": "Rising steel and commodity prices, plus recent supply\u2011chain disruptions, are squeezing Caterpillar\u2019s procurement budget. Our spend\u2011analytics platform can surface cost\u2011driving material categories and flag high\u2011risk suppliers before they impact production. Would you be open to a quick discussion on how we can help you gain better visibility and control over these cost pressures?",
+  "notes": "Citation verifier dropped 1 unverifiable quote(s): procurement_risks[1]: quote not found in source"
+}

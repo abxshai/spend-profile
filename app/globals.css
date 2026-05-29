@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+@theme {
+  --color-accent: oklch(0.78 0.18 70);
+}

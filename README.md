@@ -25,7 +25,7 @@ Plus a Bulk tab: paste N URLs → 3 parallel workers → results table → batch
 
 **Hybrid (regex + LLM) is the load-bearing design choice.** The LLM is bad at faithfully reading numbers from financial tables; the regex is bad at narrative judgment. We let the regex own the numbers (deterministic, citation-perfect) and the LLM own selection ranking + risks + sales angle. See `lib/financials.ts` for the anchor dictionary and `lib/verify.ts` for the citation safety net.
 
-**Why this stack (defended in WRITEUP.md):**
+**Why this stack:**
 
 - **LlamaParse** for OCR. Handles 10-Ks, Indian ARs, BSE filings, anything in PDF or HTML. Cost-effective tier ≈ $0.94/250pg.
 - **Groq · `openai/gpt-oss-120b`** for the LLM. ~$0.02/extract at $1/5M tokens. 128k context.
@@ -113,7 +113,7 @@ A committed sample for Caterpillar (CAT, FY2025) is at [`samples/caterpillar-fy2
 | 250-pg annual report | ~$0.94 (250 × $0.00375) | ~$0.02 (extract) | **~$0.96** |
 | US 10-K via direct PDF | same as above | same | **~$0.96** |
 
-The OCR pass dominates. v2 routes (EDGAR XBRL for US tickers, smaller LlamaParse tier when extraction confidence is high) drop blended cost to ~$0.30/co — see WRITEUP.md for the math.
+The OCR pass dominates. v2 routes (section-targeted parsing of just the P&L + Risk Factors pages, smaller LlamaParse tier when extraction confidence is high) drop blended cost to ~$0.11/co at 10k/month. Detailed math is in the writeup submitted alongside the take-home.
 
 ---
 

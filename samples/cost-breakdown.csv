@@ -1,0 +1,20 @@
+section,document,pages,parse_credits,parse_cost_usd,groq_input_tokens,groq_output_tokens,groq_cost_usd,total_per_company_usd
+per-pdf,Reliance Industries FY24-25 (Ind AS),146,438,0.55,84000,1500,0.014,0.56
+per-pdf,Tata Steel FY24-25 (Ind AS),554,1662,2.08,84000,1500,0.014,2.09
+per-pdf,Wipro FY23-24 (Ind AS),481,1443,1.80,84000,1500,0.014,1.81
+per-pdf,Caterpillar FY2025 10-K (US GAAP),150,450,0.56,84000,1500,0.014,0.57
+per-pdf,Boeing FY2025 10-K (US GAAP),140,420,0.53,84000,1500,0.014,0.54
+per-pdf,Walmart FY2026 10-K (US GAAP),80,240,0.30,40000,1500,0.008,0.31
+per-pdf,6-company average,259,776,0.97,76667,1500,0.013,0.98
+,,,,,,,,
+section,line_item,v1_full_doc_parse_usd,v2_section_targeted_usd,,,,
+at-10000-month,LlamaParse,10000,940,,,,,
+at-10000-month,Groq,140,140,,,,,
+at-10000-month,Total per month,10140,1080,,,,,
+at-10000-month,Blended per company,1.01,0.11,,,,,
+,,,,,,,,
+notes,Only Wipro's credit count is dashboard-confirmed (1443 credits on 29 May 2026); other parse_credits are computed at 3 credits/page,,,,,,,
+notes,LlamaParse cost-effective tier: parse_page_with_llm = 3 credits/page x $1.25/1000 credits = $0.00375/page,,,,,,,
+notes,Groq pricing (openai/gpt-oss-120b): $1 / 6.7M input tokens & $1 / 1.7M output tokens,,,,,,,
+notes,Markdown context cap is 320k chars (~80k tokens); larger PDFs trigger head+tail truncation,,,,,,,
+notes,Walmart 10-K markdown was small enough that no truncation triggered (~40k input tokens instead of ~80k),,,,,,,

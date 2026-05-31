@@ -124,4 +124,4 @@ The OCR pass dominates. v2 routes (section-targeted parsing of just the P&L + Ri
 - **PDFs land in `tmp/uploads/`** and aren't GC'd. Fine for the take-home; would move to S3/R2 with TTL for prod.
 - **No retry on schema failure.** A 422 from `/api/extract` returns the raw model output so you can debug. We'd rather surface the failure than burn a second LLM call masking a stale system prompt.
 
-See [WRITEUP.md](WRITEUP.md) for the 1-pager: trade-offs cut, where it breaks, the 10k/mo cost math, and v2.
+The 1-pager on trade-offs cut, where it breaks, the 10k/mo cost math, and v2 is submitted alongside the take-home.
